@@ -1,0 +1,11 @@
+use Test::More tests=>1;
+package EA;
+use Moo;
+with( 'MooX::Log::Any');
+1;
+package Main;
+use Log::Any::Test;
+use Log::Any qw($log);
+my $app=EA->new;
+$app->log->error('good log message');
+$log->contains_ok(qr/good log message/,"good message was logged");

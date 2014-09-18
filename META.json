@@ -1,0 +1,51 @@
+{
+   "abstract" : "Role to add Log::Any",
+   "author" : [
+      "Edward Ash <eddie+cpan@ashfamily.net>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "MooX-Log-Any",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Log::Any" : "0",
+            "Log::Any::Adapter" : "0",
+            "Moo::Role" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Log::Any::Test" : "0",
+            "Moo" : "0",
+            "Test::More" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/cazador481/MooX-Log-Any/issues"
+      },
+      "homepage" : "https://github.com/cazador481/MooX-Log-Any",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/cazador481/MooX-Log-Any.git",
+         "web" : "https://github.com/cazador481/MooX-Log-Any"
+      }
+   },
+   "version" : "0.0.2"
+}
+

@@ -1,0 +1,26 @@
+---
+abstract: 'Role to add Log::Any'
+author:
+  - 'Edward Ash <eddie+cpan@ashfamily.net>'
+build_requires:
+  Log::Any::Test: '0'
+  Moo: '0'
+  Test::More: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: MooX-Log-Any
+requires:
+  Log::Any: '0'
+  Log::Any::Adapter: '0'
+  Moo::Role: '0'
+resources:
+  bugtracker: https://github.com/cazador481/MooX-Log-Any/issues
+  homepage: https://github.com/cazador481/MooX-Log-Any
+  repository: https://github.com/cazador481/MooX-Log-Any.git
+version: 0.0.2
