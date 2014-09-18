@@ -1,0 +1,35 @@
+name    = MooX-Log-Any
+author  = Edward Ash <eddie+cpan@ashfamily.net>
+license = Perl_5
+copyright_holder = Edward Ash
+copyright_year   = 2013
+<<<<<<< HEAD
+version = 0.0.2
+[MetaResources]
+[Git::CommitBuild]
+branch =
+release_branch = master 
+release_message = Release build of v%v (on %b)
+;[NextRelease]
+;[Git::NextVersion]
+[@Git]
+[Prereqs]
+Log::Any::Adapter=0
+[AutoPrereqs]
+[ReadmeAnyFromPod / MarkdownInRoot ]
+filename=README.md
+[@Basic]
+[MetaJSON]
+[GithubMeta]
+issues = 1
+user = cazador481
+[PodWeaver]
+=======
+[MetaResources]
+[MetaJSON]
+[NextRelease]
+[Git::NextVersion]
+[@Git]
+[AutoPrereqs]
+[@Basic]
+>>>>>>> 161ae63587a4ba6519c103ac3ed69729cfb78e14
