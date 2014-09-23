@@ -6,6 +6,7 @@ META.json
 META.yml
 Makefile.PL
 README
+README.md
 dist.ini
 lib/MooX/Log/Any.pm
 t/l0.t

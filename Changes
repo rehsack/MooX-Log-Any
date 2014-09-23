@@ -1,5 +1,10 @@
-Revision history for {{$dist->name}}
+Revision history for MooX-Log-Any
 
-{{$NEXT}}
+0.003     2014-09-22 19:14:22-07:00 America/Los_Angeles
+  - Fixed bug where logger(category) would return default category not specified one
+  - Fixed version info
+
+0.0.2
+  - Fixed distribution issues
 
 0.001     2013-01-07 21:23:14 America/New_York

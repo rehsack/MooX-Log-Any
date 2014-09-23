@@ -12,6 +12,11 @@ has 'log' => (
 );
 sub logger {
 	my $self=shift;
+	my $category=shift; 
+	if (defined $category)
+	{
+		return Log::Any->get_logger(category=>$category);
+	}
 	return $self->log;
 }
 1;
@@ -28,7 +33,7 @@ MooX::Log::Any - Role to add Log::Any
 
 =head1 VERSION
 
-version 0.0.2
+version 0.003
 
 =head1 SYNOPSIS
 
@@ -46,7 +51,7 @@ version 0.0.2
 =head1 DESCRIPTION
 
 A logging role building a very lightweight wrapper to L<Log::Any> for use with your L<Moo> or L<Moose> classes.
-Connectibng a Log::Any::Adapter should be performed prior to logging the first log message, otherwise nothing will happen, just like with Log::Any
+Connecting a Log::Any::Adapter should be performed prior to logging the first log message, otherwise nothing will happen, just like with Log::Any
 
 Using the logger within a class is as simple as consuming a role:
 
@@ -97,23 +102,21 @@ This is an alias for log.
 
 L<Log::Any>, L<Moose>, L<Moo>
 
-=head1 BUGS AND LIMITATIONS
-
-Please report any bugs or feature requests to
-C<bug-moosex-log4perl@rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org>.
-
-Or come bother us in C<#moose> on C<irc.perl.org>.
-
-=head1 AUTHOR
-
-Roland Lammel C<< <lammel@cpan.org> >>
+=head2 Inspired by
 
 Inspired by the work by Chris Prather C<< <perigrin@cpan.org> >> and Ash
 Berlin C<< <ash@cpan.org> >> on L<MooseX::LogDispatch> and Roland Lammel C<< <lammel@cpan.org> >>
+
+=head1 BUGS AND LIMITATIONS
+
+Please report any bugs or feature requests through github 
+L<https://github.com/cazador481/MooX-Log-Any>.
+
 =head1 CONTRIBUTORS
 
 In alphabetical order:
+
+Jens Rehsack C<< rehsack@gmail.com> >>
 
 =over 2
 
