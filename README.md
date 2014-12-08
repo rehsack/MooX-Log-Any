@@ -4,7 +4,7 @@ MooX::Log::Any - Role to add Log::Any
 
 # VERSION
 
-version 0.003
+version 0.003001
 
 # SYNOPSIS
 

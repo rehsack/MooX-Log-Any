@@ -10,4 +10,5 @@ README.md
 dist.ini
 lib/MooX/Log/Any.pm
 t/l0.t
+t/release-test-version.t
 weaver.ini
