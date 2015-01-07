@@ -24,7 +24,7 @@
             "Log::Any" : "0",
             "Log::Any::Adapter" : "0",
             "Moo::Role" : "0",
-            "PERL" : "5.006"
+            "perl" : "5.006"
          }
       },
       "test" : {
@@ -47,6 +47,6 @@
          "web" : "https://github.com/cazador481/MooX-Log-Any"
       }
    },
-   "version" : "0.003001"
+   "version" : "0.004000"
 }
 
