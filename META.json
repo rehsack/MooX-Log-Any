@@ -4,19 +4,25 @@
       "Edward Ash <eddie+cpan@ashfamily.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.034, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "MooX-Log-Any",
    "prereqs" : {
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::More" : "0",
+            "Test::Version" : "1"
          }
       },
       "runtime" : {
@@ -29,9 +35,15 @@
       },
       "test" : {
          "requires" : {
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Log::Any::Test" : "0",
             "Moo" : "0",
-            "Test::More" : "0"
+            "Test::More" : "0",
+            "perl" : "5.006",
+            "strict" : "0",
+            "warnings" : "0"
          }
       }
    },
@@ -47,6 +59,6 @@
          "web" : "https://github.com/cazador481/MooX-Log-Any"
       }
    },
-   "version" : "0.004001"
+   "version" : "0.004002"
 }
 
