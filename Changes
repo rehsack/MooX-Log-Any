@@ -1,5 +1,8 @@
 Revision history for MooX-Log-Any
 
+0.004003  2015-10-29 10:45:03-07:00 America/Los_Angeles
+  - Fixed issue 6
+
 0.004002  2015-04-07 11:19:55-04:00 America/New_York
   - Removed double version
   - Added compile test
