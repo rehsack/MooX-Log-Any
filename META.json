@@ -4,7 +4,7 @@
       "Edward Ash <eddie+cpan@ashfamily.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.037, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Dist::Zilla version 5.043, CPAN::Meta::Converter version 2.150001",
    "license" : [
       "perl_5"
    ],
@@ -40,6 +40,7 @@
             "Log::Any::Test" : "0",
             "Moo" : "0",
             "Test::More" : "0",
+            "blib" : "1.01",
             "perl" : "5.006",
             "strict" : "0",
             "warnings" : "0"
@@ -58,6 +59,6 @@
          "web" : "https://github.com/cazador481/MooX-Log-Any"
       }
    },
-   "version" : "0.004003"
+   "version" : "0.004004"
 }
 

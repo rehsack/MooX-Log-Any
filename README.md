@@ -4,20 +4,7 @@ MooX::Log::Any - Role to add Log::Any
 
 # VERSION
 
-version 0.004003
-
-# SYNOPSIS
-
-    package MyApp;
-    use Moo;
-    
-    with 'MooX::Log::Any';
-    
-    sub something {
-        my ($self) = @_;
-        $self->log->debug("started bar");    ### logs with default class catergory "MyApp"
-        $self->log->error("started bar");    ### logs with default class catergory "MyApp"
-    }
+version 0.004004
 
 # DESCRIPTION
 
@@ -46,6 +33,19 @@ The logger needs to be setup before using the logger, which could happen in the 
     my $myclass = MyClass->new();
     $myclass->log->info("In my class"); # Access the log of the object
     $myclass->dummy;                    # Will log "Dummy log entry"
+
+# SYNOPSIS;
+
+    package MyApp;
+    use Moo;
+    
+    with 'MooX::Log::Any';
+    
+    sub something {
+        my ($self) = @_;
+        $self->log->debug("started bar");    ### logs with default class catergory "MyApp"
+        $self->log->error("started bar");    ### logs with default class catergory "MyApp"
+    }
 
 # ACCESSORS
 
@@ -91,7 +91,7 @@ Jens Rehsack `rehsack@gmail.com>`
 
 # AUTHOR
 
-Edward Ash <eddie+cpan@ashfamily.net>
+Edward Ash &lt;eddie+cpan@ashfamily.net>
 
 # COPYRIGHT AND LICENSE
 
