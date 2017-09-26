@@ -34,6 +34,19 @@ MooX::Log::Any - Role to add Log::Any
 
 version 0.004004
 
+=head1 SYNOPSIS;
+
+    package MyApp;
+    use Moo;
+    
+    with 'MooX::Log::Any';
+    
+    sub something {
+        my ($self) = @_;
+        $self->log->debug("started bar");    ### logs with default class catergory "MyApp"
+        $self->log->error("started bar");    ### logs with default class catergory "MyApp"
+    }
+
 =head1 DESCRIPTION
 
 A logging role building a very lightweight wrapper to L<Log::Any> for use with your L<Moo> or L<Moose> classes.
@@ -62,19 +75,6 @@ The logger needs to be setup before using the logger, which could happen in the 
     $myclass->log->info("In my class"); # Access the log of the object
     $myclass->dummy;                    # Will log "Dummy log entry"
 
-=head1 SYNOPSIS;
-
-    package MyApp;
-    use Moo;
-    
-    with 'MooX::Log::Any';
-    
-    sub something {
-        my ($self) = @_;
-        $self->log->debug("started bar");    ### logs with default class catergory "MyApp"
-        $self->log->error("started bar");    ### logs with default class catergory "MyApp"
-    }
-
 =head1 ACCESSORS
 
 =head2 log
@@ -86,7 +86,7 @@ roles/systems like L<MooseX::Log::LogDispatch> this can be thought of as a commo
   package MyApp::View::JSON;
 
   extends 'MyApp::View';
-  with 'MooseX:Log::Log4perl';
+  with 'MooX:Log::Any';
 
   sub bar {
     $self->logger->info("Everything fine so far");    # logs a info message
