@@ -75,6 +75,35 @@ The logger needs to be setup before using the logger, which could happen in the 
     $myclass->log->info("In my class"); # Access the log of the object
     $myclass->dummy;                    # Will log "Dummy log entry"
 
+A really advanced usage would allow configuring externally and avoid leaking memory when using this in classes instantiated several times ... (logging isn't limited to Apps):
+
+    package MyRole;
+
+    use Class::Load('load_class'); # see (1)
+    use Moo::Role;
+    with 'MooX::Log::Any';
+    has log_adapter => is => "ro" => required => 1 => trigger => 1;
+    has log_guard   => is => "rw" => init_arg => undef;
+
+    sub _trigger_log_guard {
+	my ($self, $opts) = @_;
+	my $guard;
+	load_class("Log::Any::Adapter")->set({lexically => \$guard}, @{$opts}); # see (2)
+	$self->log_guard($guard);
+    }
+
+=over 4
+
+=item 1
+
+See L<Moo::Role/"CLEANING UP IMPORTS">
+
+=item 2
+
+Can be varied or improved using L<Params::Util/_ARRAY0> or L<Params::Util/_HASH0> ...
+
+=back
+
 =head1 ACCESSORS
 
 =head2 log
